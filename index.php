@@ -19,7 +19,8 @@
         
             <title>Cuentas BANAVIM</title>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-            <link href="/css/style.css" rel="stylesheet">
+            <!-- ESTILOS -->
+            <link href="datosviolencia/css/style.css" rel="stylesheet">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -30,31 +31,16 @@
             <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
             <script src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap4.min.js"></script>
 
+            <script src="https://www.google.com/recaptcha/api.js"></script>
+
+            <script>
+                function onSubmit(token) {
+                    document.getElementById("demo-form").submit();
+                }
+            </script>
+
         </head>
         <body class="body2">
-            <!-- <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 titulos">
-
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="login">
-                    <form action="autenticacion.php" method="post">
-                        <label for="username">
-                            <i class="fas fa-user"></i>
-                        </label>
-                        <input type="text" name="username" placeholder="Usuario" id="username" required>
-                        <label for="password">
-                            <i class="fas fa-lock"></i>
-                        </label>
-                        <input type="password" name="password"
-                        placeholder="Contraseña" id="password" required>
-                        <input type="submit" value="Acceder">
-                    </form>
-                </div>
-            </div> -->
 
             <div class="page2">
                 <div class="container2">
@@ -85,13 +71,18 @@
                             </defs>
                             <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
                         </svg>
-                        <form action="autenticacion.php" method="post">
+                        <form  id="demo-form" action="autenticacion.php" method="post">
                             <div class="form">
                                 <label class="label2" for="username">Usuario</label>
                                 <input class="input2" type="text" name="username" id="username">
                                 <label class="label2" for="password">Contraseña</label>
                                 <input class="input2" type="password" name="password" id="password">
-                                <input class="input2"  type="submit" id="submit" value="Acceder">
+                                <button class="g-recaptcha input2" 
+                                data-sitekey="6LefZ3UpAAAAAIuV9K-4nS99wdIt71hwCW0GGZtA" 
+                                data-callback='onSubmit' 
+                                data-action='submit'>Acceder</button>
+
+                                <!-- <input class="input2"  type="submit" id="submit" value="Acceder"> -->
                             </div>
                         </form>
                     </div>
