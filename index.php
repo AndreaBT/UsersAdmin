@@ -78,7 +78,7 @@
                                 <label class="label2" for="password">Contraseña</label>
                                 <input class="input2" type="password" name="password" id="password">
                                 <button class="g-recaptcha input2" 
-                                data-sitekey="6LefZ3UpAAAAAIuV9K-4nS99wdIt71hwCW0GGZtA" 
+                                data-sitekey="6LfTRZMUAAAAAFarfRkxJI-pTAZcJdkuWUZDK1fY" 
                                 data-callback='onSubmit' 
                                 data-action='submit'>Acceder</button>
 

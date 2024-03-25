@@ -2,10 +2,6 @@
 <?php
     require_once 'bd_config/conexion.php';
 
-    $records = $conn->prepare('SELECT * FROM usuarios');
-    $records->execute();
-    $results = $records->fetchAll();
-
     
 ?>
 <!DOCTYPE html>

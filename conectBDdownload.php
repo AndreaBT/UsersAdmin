@@ -1,5 +1,5 @@
 <?php   
-     require 'bd_config/dbSettings.php';
+    require 'bd_config/dbSettings.php';
     
     $host = $db_host;
     $usuario = $db_user;

@@ -3,7 +3,7 @@
     session_start();
     require_once 'bd_config/conexion.php';
 
-    $records = $conn->prepare('SELECT * FROM usuarios WHERE estatus = "S" ORDER BY fecha DESC');
+    $records = $conn->prepare('SELECT * FROM usuarios WHERE solicitud = "Nueva Cuenta" and estatus != "A" ORDER BY fecha DESC');
     $records->execute();
     $results = $records->fetchAll();
 

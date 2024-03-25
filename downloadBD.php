@@ -12,7 +12,6 @@ use PhpOffice\PhpSpreadsheet\Style\Color;
 use PhpOffice\PhpSpreadsheet\Style\Fill;
 
     $spreadsheet = new Spreadsheet();
-    // TODOS 2024
     $sheet = $spreadsheet->setActiveSheetIndex(0);
     // $activeWorksheet = $spreadsheet->getActiveSheet();
 
